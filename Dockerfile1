@@ -1,0 +1,34 @@
+
+#####################################
+#   STEP 1 build executable binary  #
+#####################################
+FROM choufengleilei/golang-build:v1 AS build
+
+WORKDIR /go/src/gin-blog
+
+COPY . .
+
+RUN go mod download
+
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -o gin-blog
+
+#alpine 测试环境
+#scratch
+FROM alpine
+
+MAINTAINER choufengleilei "choufengleilei@126.com"
+
+WORKDIR $GOPATH/src/gin-blog
+
+COPY --from=build /go/src/gin-blog/gin-blog .
+
+COPY --from=build /go/src/gin-blog/docs ./docs
+
+COPY --from=build /go/src/gin-blog/conf ./conf
+
+COPY --from=build /go/src/gin-blog/runtime/logs ./runtime/logs
+
+EXPOSE 8000
+
+ENTRYPOINT ["./gin-blog"]
+
