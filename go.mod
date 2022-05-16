@@ -10,7 +10,7 @@ require (
 	github.com/boombuler/barcode v1.0.0
 	github.com/dgrijalva/jwt-go v0.0.0-20180921172315-3af4c746e1c2
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
-	github.com/gin-gonic/gin v1.4.0
+	github.com/gin-gonic/gin v1.7.0
 	github.com/go-ini/ini v1.42.0
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
 	github.com/gomodule/redigo v2.0.0+incompatible
@@ -20,6 +20,7 @@ require (
 	github.com/swaggo/swag v1.5.0
 	github.com/tealeg/xlsx v1.0.3
 	golang.org/x/image v0.0.0-20190523035834-f03afa92d3ff // indirect
+	golang.org/x/net v0.0.0-20190503192946-f4e77d36d62c // indirect
 	gopkg.in/ini.v1 v1.42.0 // indirect
 )
 
