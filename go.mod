@@ -5,8 +5,8 @@ go 1.12
 require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/Unknwon/com v0.0.0-20190321035513-0fed4efef755
-	github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc
-	github.com/astaxie/beego v1.11.1
+	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
+	github.com/astaxie/beego v1.12.2
 	github.com/boombuler/barcode v1.0.0
 	github.com/dgrijalva/jwt-go v0.0.0-20180921172315-3af4c746e1c2
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
