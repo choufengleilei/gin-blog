@@ -19,7 +19,7 @@ require (
 	github.com/swaggo/gin-swagger v1.1.0
 	github.com/swaggo/swag v1.5.0
 	github.com/tealeg/xlsx v1.0.3
-	golang.org/x/image v0.0.0-20190523035834-f03afa92d3ff // indirect
+	golang.org/x/image v0.5.0 // indirect
 	gopkg.in/ini.v1 v1.42.0 // indirect
 )
 
